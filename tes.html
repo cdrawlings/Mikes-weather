@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link
+            href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <title>WeatherJS</title>
+</head>
+<html>
+<div class="fluid-container bg-secondary">
+    <h1 class="text-center fw-bold">5 Day Weather</h1>
+</div>
+
+<div class="container">
+    <div class="row jusitify-content-center">
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Select City</h5>
+                    <form>
+                        <input
+                                id="city"
+                                name="city"
+                                placeholder="City Name"
+                                type="text"
+                        />
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-2">
+            <h3>Search Cities</h3>
+            <ul id="search-cities">
+            </ul>
+        </div>
+
+        <!-- Ten collum row to hold the weather for the five day forcast. -->
+        <div class="col-md-10">
+            <div class="container">
+
+                <div class="row">
+                    <div class="card-body" id="current-weather">
+current
+                    </div>
+                </div>
+
+                <div class="row" id="five-day-weather">
+
+                    <div class="card">
+                        <div class="card-body"">
+                        daily
+                    </div>
+                    <div class="card">
+                        <div class="card-body"">
+                        daily
+                    </div>
+                    <div class="card">
+                        <div class="card-body"">
+                        daily
+                    </div>
+                    <div class="card">
+                        <div class="card-body"">
+                        daily
+                    </div>
+                    <div class="card">
+                        <div class="card-body"">
+                        daily
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script
+        crossorigin="anonymous"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+></script>
+<script
+        crossorigin="anonymous"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+></script>
+<script
+        crossorigin="anonymous"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+></script>
+
+<script src="script.js"></script>
+</body>
+</html>
